@@ -4,4 +4,4 @@
 ![](./image/reverse_hat.png)
 
 
-![](./image/reverse_stop.png)
+![](./image/reverse_stop_sign.png)
