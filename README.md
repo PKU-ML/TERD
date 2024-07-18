@@ -1,7 +1,7 @@
 # TERD: A Framework for Backdoor Detection on Diffusion Model
 Backdoor detection of diffusion models @ ICML 2024 "TERD: A Framework for Backdoor Defense on Diffusion Model" by Yichuan Mo, Hui Huang, Mingjie Li, Ang Li, [Yisen Wang](https://yisenwang.github.io/).  
 
-Please refer to each directory to access the code for each attack.
+This repository is under reconstruction. Please refer to each directory to access the code for each attack.
 
 
 
