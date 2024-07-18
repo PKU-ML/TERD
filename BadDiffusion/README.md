@@ -10,6 +10,7 @@ An example of the backdoor training Script:
 ```
 # Trigger: STOP SIGN
 # Target: CORNER
+
 CUDA_VISIBLE_DEVICES=0 python baddiffusion.py --project CIFAR_STOP_SIGN_14_CORNER --mode train+measure --dataset CIFAR10 --batch 128 --epoch 100 --poison_rate 0.1 --trigger STOP_SIGN_14 --target CORNER --ckpt DDPM-CIFAR10-32 --fclip o -o --gpu 0
 ```
 
