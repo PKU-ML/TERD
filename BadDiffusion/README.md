@@ -11,19 +11,19 @@ CUDA_VISIBLE_DEVICES=0 python baddiffusion.py --project CIFAR_STOP_SIGN_14_CORNE
 
 You can also download pre-trained checkpoints of the backdoor model with the following link:
 
-- [Benign Model] ()
+- [Benign Model]()
 
-- [BOX Trigger + HAT Target] ()
+- [BOX Trigger + HAT Target]()
 
-- [BOX Trigger + CORNER Target] ()
+- [BOX Trigger + CORNER Target]()
 
-- [BOX Trigger + SHOE Target] ()
+- [BOX Trigger + SHOE Target]()
 
-- [STOP SIGN Trigger + HAT Target] ()
+- [STOP SIGN Trigger + HAT Target]()
 
-- [STOP SIGN Trigger + CORNER Target] ()
+- [STOP SIGN Trigger + CORNER Target]()
 
-- [STOP SIGN Trigger + SHOE Target] ()
+- [STOP SIGN Trigger + SHOE Target]()
 
 
 ## Trigger Reversion
