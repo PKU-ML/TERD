@@ -13,17 +13,17 @@ You can also download pre-trained checkpoints of the backdoor model with the fol
 
 - [Benign Model]()
 
-- [BOX Trigger + HAT Target]()
+- [BOX Trigger + HAT Target Model]()
 
-- [BOX Trigger + CORNER Target]()
+- [BOX Trigger + CORNER Target Model]()
 
-- [BOX Trigger + SHOE Target]()
+- [BOX Trigger + SHOE Target Model]()
 
-- [STOP SIGN Trigger + HAT Target]()
+- [STOP SIGN Trigger + HAT Target Model]()
 
-- [STOP SIGN Trigger + CORNER Target]()
+- [STOP SIGN Trigger + CORNER Target Model]()
 
-- [STOP SIGN Trigger + SHOE Target]()
+- [STOP SIGN Trigger + SHOE Target Model]()
 
 
 ## Trigger Reversion
