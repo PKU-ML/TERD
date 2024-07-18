@@ -17,19 +17,19 @@ CUDA_VISIBLE_DEVICES=0 python baddiffusion.py --project CIFAR_STOP_SIGN_14_CORNE
 
 You can also download pre-trained checkpoints of the backdoor model with the following link:
 
-- [Benign Model]()
+- [Benign Model](https://drive.google.com/drive/folders/1MxTWQXM92_FDrgd_JRteTrdeLagnBbMH?usp=sharing)
 
-- [BOX Trigger + HAT Target Model]()
+- [BOX Trigger + HAT Target Model](https://drive.google.com/drive/folders/1bfie99--iSRYP4zNajommQgbWwkBbIWk?usp=drive_link)
 
-- [BOX Trigger + CORNER Target Model]()
+- [BOX Trigger + CORNER Target Model](https://drive.google.com/drive/folders/1QJ8q4dD2A6VH0cnSWuCCWGZxuLsZtEqB?usp=drive_link)
 
-- [BOX Trigger + SHOE Target Model]()
+- [BOX Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1cLbzBz9IY_XBnLhGfTeatPC6SfnhLYtS?usp=drive_link)
 
-- [STOP SIGN Trigger + HAT Target Model]()
+- [STOP SIGN Trigger + HAT Target Model](https://drive.google.com/drive/folders/17MSBVh2uXCo6Dq6HQaY2HeA4VFkmh7fT?usp=drive_link)
 
-- [STOP SIGN Trigger + CORNER Target Model]()
+- [STOP SIGN Trigger + CORNER Target Model](https://drive.google.com/drive/folders/1IAV7qrH6UVLdPz8-piVGPM6gDCqbH8NG?usp=drive_link)
 
-- [STOP SIGN Trigger + SHOE Target Model]()
+- [STOP SIGN Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1iu7G07MASRyzjpBc65VXuiCBE6H66yah?usp=drive_link)
 
 
 ## Trigger Reversion
