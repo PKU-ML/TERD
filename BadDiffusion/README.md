@@ -39,13 +39,29 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 An example (Box trigger + Hat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT_1 --fclip o -o --gpu 0
+CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT --fclip o -o --gpu 0
 ```
 
 For the commands of other settings, please refer to `cifar_10.sh` for more details.
 
+## Model Detection
+
+An example (Box trigger + Hat target):
+
+```
+CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"
+```
 
 
+
+## Input Detection
+
+An example (Box trigger + Hat target):
+
+```
+CUDA_VISIBLE_DEVICES=1 python input_detection.py --reverse_path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"  --trigger CIFAR_BOX_14_hat --ckpt BOX_HAT --fclip o -o --gpu 0
+```
+For the commands of other settings, you can refer to `cifar_10.sh` for more details.
 
 
 ### Visualization of the reversed process
