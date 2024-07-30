@@ -46,6 +46,8 @@ For the commands of other settings, please refer to `cifar_10.sh` for more detai
 
 ## Model Detection
 
+**CIFAR-10 dataset:**
+
 An example (Box trigger + Hat target):
 
 ```
@@ -53,8 +55,9 @@ CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory/CIF
 ```
 
 
-
 ## Input Detection
+
+**CIFAR-10 dataset:**
 
 An example (Box trigger + Hat target):
 
