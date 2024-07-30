@@ -42,7 +42,7 @@ An example (Box trigger + Hat target):
 CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT --fclip o -o --gpu 0
 ```
 
-For the commands of other settings, please refer to `cifar_10_reverse.sh` for more details.
+For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
 
 ### Visualization of the reversed process
 
