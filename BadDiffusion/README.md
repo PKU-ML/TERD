@@ -31,16 +31,6 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 - [STOP SIGN Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1iu7G07MASRyzjpBc65VXuiCBE6H66yah?usp=drive_link)
 
-### Visualization of the reversed process
-
-Grey Box
-
-![](./image/reverse_hat.png)
-
-Stop Sign
-
-![](./image/reverse_stop_sign.png)
-
 
 ## Trigger Reversion
 
@@ -53,6 +43,16 @@ CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_
 ```
 
 For the commands of other settings, please refer to `cifar_10_reverse.sh` for more details.
+
+### Visualization of the reversed process
+
+Grey Box
+
+![](./image/reverse_hat.png)
+
+Stop Sign
+
+![](./image/reverse_stop_sign.png)
 
 ## Model Detection
 
