@@ -35,11 +35,14 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 ## Trigger Reversion
 
 **CIFAR-10 dataset:**
+
 An example (Box trigger + Hat target):
+
 ```
 CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT_1 --fclip o -o --gpu 0
 ```
-For commands of other settings, please refer to `cifar_10.sh` for more details.
+
+For the commands of other settings, please refer to `cifar_10.sh` for more details.
 
 
 
