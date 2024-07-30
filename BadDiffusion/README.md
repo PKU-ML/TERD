@@ -33,11 +33,11 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 ### Visualization of the reversed process
 
-**Grey Box**
+Grey Box
 
 ![](./image/reverse_hat.png)
 
-**Stop Sign**
+Stop Sign
 
 ![](./image/reverse_stop_sign.png)
 
