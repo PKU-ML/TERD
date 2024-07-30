@@ -76,5 +76,14 @@ CUDA_VISIBLE_DEVICES=1 python input_detection.py --reverse_path "./reverse_direc
 ```
 For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cifar_10_input.sh) for more details.
 
+|Setting|TPR|TNR|
+|--|--|--|
+|BOX-HAT|100%|100%|
+|BOX-SHOE|100%|100%|
+|BOX-CORNER|100%|100%|
+|STOP-HAT|100%|100%|
+|STOP-SHOE|100%|100%|
+|STOP-CORNER|100%|100%|
+
 
 
