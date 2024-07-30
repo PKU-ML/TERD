@@ -63,7 +63,7 @@ An example (Box trigger + Hat target):
 ```
 CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"
 ```
-For the commands of other settings, you can refer to `cifar_10_model.sh` for more details.
+For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cifar_10_model.sh) for more details.
 
 ## Input Detection
 
@@ -74,7 +74,7 @@ An example (Box trigger + Hat target):
 ```
 CUDA_VISIBLE_DEVICES=1 python input_detection.py --reverse_path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"  --trigger CIFAR_BOX_14_hat --ckpt BOX_HAT --fclip o -o --gpu 0
 ```
-For the commands of other settings, you can refer to `cifar_10_input.sh` for more details.
+For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cifar_10_input.sh) for more details.
 
 
 
