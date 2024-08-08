@@ -70,7 +70,7 @@ An example (Glasses trigger + Cat target):
 CUDA_VISIBLE_DEVICES=0 python reverse_big.py --batch-size 2 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory_celebahq/" --project CELEBA_GLASSES_CAT_5 --mode measure --ckpt res_DDPM-CELEBA-HQ-256_CELEBA-HQ_ep50_c1.0_p0.5_GLASSES-CAT --fclip o -o --gpu 0 --dataset CELEBA-HQ
 ```
 
-For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
+For the commands of other settings, please refer to [`celeba_hq_reverse.sh`](./celeba_hq_reverse.sh) for more details.
 
 ### Visualization of the reversed process
 
@@ -92,6 +92,15 @@ An example (Box trigger + Hat target):
 CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"
 ```
 For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cifar_10_model.sh) for more details.
+
+**CELEBA-HQ dataset:**
+
+An example (Glasses trigger + Cat target):
+
+```
+CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_celeba/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl"
+```
+For the commands of other settings, you can refer to [`celeba_hq_model.sh`](./celeba_hq_model.sh) for more details.
 
 ## Input Detection
 
