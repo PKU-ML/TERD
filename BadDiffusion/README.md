@@ -31,6 +31,24 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 - [STOP SIGN Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1iu7G07MASRyzjpBc65VXuiCBE6H66yah?usp=drive_link)
 
+**CELEBA-HQ dataset**
+
+An example of the backdoor training Script:
+```
+# Trigger: GLASSES
+
+# Target: CAT
+
+CUDA_VISIBLE_DEVICES=0,1 python baddiffusion.py --project CELEBA_GLASSES_CAT_5 --mode train+measure --dataset CELEBA-HQ --batch 64 --epoch 50 --poison_rate 0.5 --trigger GLASSES --learning_rate 8e-5 --target CAT --ckpt DDPM-CELEBA-HQ-256 --fclip o -o --gpu "0,1"
+```
+
+You can also download pre-trained checkpoints of the benign/backdoor models with the following [links](https://drive.google.com/drive/folders/1VtAaGI2RjsSIqagIBjb96Y5cQ1MkeQ8B?usp=drive_link):
+
+- [Benign Model](https://drive.google.com/drive/folders/1MxTWQXM92_FDrgd_JRteTrdeLagnBbMH?usp=sharing)
+
+- [BOX Trigger + HAT Target Model](https://drive.google.com/drive/folders/1bfie99--iSRYP4zNajommQgbWwkBbIWk?usp=drive_link)
+
+
 
 ## Trigger Reversion
 
