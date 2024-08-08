@@ -33,7 +33,7 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 **CELEBA-HQ dataset**
 
-An example of the backdoor training Script:
+An example of the backdoor training Script (Require 2*A100 80G):
 ```
 # Trigger: GLASSES
 
@@ -44,9 +44,9 @@ CUDA_VISIBLE_DEVICES=0,1 python baddiffusion.py --project CELEBA_GLASSES_CAT_5 -
 
 You can also download pre-trained checkpoints of the benign/backdoor models with the following [links](https://drive.google.com/drive/folders/1VtAaGI2RjsSIqagIBjb96Y5cQ1MkeQ8B?usp=drive_link):
 
-- [Benign Model](https://drive.google.com/drive/folders/1MxTWQXM92_FDrgd_JRteTrdeLagnBbMH?usp=sharing)
+- [Benign Model](https://drive.google.com/drive/folders/1eWbq9YsRQni7nUlbF0pvdiqCEpQUoc_U?usp=drive_link)
 
-- [BOX Trigger + HAT Target Model](https://drive.google.com/drive/folders/1bfie99--iSRYP4zNajommQgbWwkBbIWk?usp=drive_link)
+- [GLASSES Trigger + CAT Target Model](https://drive.google.com/drive/folders/1cLNGbF1dW5gdChbmOcffnxkdlNXvhr14?usp=drive_link)
 
 
 
