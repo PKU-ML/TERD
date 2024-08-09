@@ -1,0 +1,2 @@
+# Detection for Glasses trigger + Cat target
+CUDA_VISIBLE_DEVICES=1 python input_detection.py --reverse_path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl" --project CELEBA_GLASSES_CAT_5 --ckpt GLASSES_CAT --fclip o -o --gpu 1
