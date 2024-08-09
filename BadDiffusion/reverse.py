@@ -202,7 +202,7 @@ def setup():
 
     os.environ.setdefault("CUDA_VISIBLE_DEVICES", config.gpu)
 
-    print(f"PyTorch detected number of availabel devices: {torch.cuda.device_count()}")
+    print(f"PyTorch detected number of available devices: {torch.cuda.device_count()}")
     setattr(config, "device_ids", [int(i) for i in range(len(config.gpu.split(',')))])
 
     # sample_ep options
