@@ -6,7 +6,6 @@ from typing import Dict
 import torch
 import tqdm
 from dataset import DatasetLoader, Backdoor
-from torch.distributions import MultivariateNormal
 
 MODE_TRAIN: str = 'train'
 MODE_RESUME: str = 'resume'
@@ -292,35 +291,26 @@ dataset_loader = get_data_loader(config=config)
 
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 mu = torch.load(args.reverse_path)["mu"].cuda().detach().view(-1)
-gamma = torch.ones_like(mu).cuda()
-
 
 true_mu = dataset_loader.trigger.unsqueeze(0).cuda()
-true_gamma = torch.ones_like(true_mu).cuda()
+
 
 rev_mu = torch.flatten(mu.cuda())
-rev_gamma = torch.flatten(gamma.cuda())
-
 benign_mu = torch.flatten(torch.zeros_like(rev_mu).cuda())
-benign_gamma = torch.flatten(torch.ones_like(rev_gamma).cuda())
 
 
-rev_gamma = torch.diag(rev_gamma)
-benign_gamma = torch.diag(benign_gamma)
-multi_normal_benign = MultivariateNormal(benign_mu, benign_gamma)
-multi_normal_poison = MultivariateNormal(rev_mu, rev_gamma)
-TPR = 0
 
 all_positive = 0
 all_negative = 0
 
+TPR = 0
 # benign input detection
 for i in tqdm.tqdm(range(args.num_detect)):
     x = torch.flatten(torch.randn(
-                3,32,32
+                3,dataset_loader.image_size,dataset_loader.image_size
             ).cuda())
-    prob_1 = multi_normal_benign.log_prob(x)
-    prob_2 = multi_normal_poison.log_prob(x)
+    prob_1 = -0.5 * (3*dataset_loader.image_size*dataset_loader.image_size*torch.log(2 * torch.tensor(torch.pi)) + (x-benign_mu).T @ (x-benign_mu))
+    prob_2 = -0.5 * (3*dataset_loader.image_size*dataset_loader.image_size*torch.log(2 * torch.tensor(torch.pi)) + (x-rev_mu).T @ (x-rev_mu))
     if prob_2 < prob_1:
         TPR = TPR + 1
         all_positive = all_positive+1
@@ -328,23 +318,25 @@ for i in tqdm.tqdm(range(args.num_detect)):
         all_negative = all_negative+1
 
 
-
 TNR = 0
 # backdoor input detection
 for i in tqdm.tqdm(range(args.num_detect)):
     x = torch.randn(
-            3,32,32,
+            3,dataset_loader.image_size,dataset_loader.image_size,
             device=device,
         ).cuda()
     x = true_gamma * x + true_mu.to(device)
     x =torch.flatten(x)
-    prob_1 = multi_normal_benign.log_prob(x)
-    prob_2 = multi_normal_poison.log_prob(x)
+    prob_1 =-0.5 * (3*dataset_loader.image_size*dataset_loader.image_size*torch.log(2 * torch.tensor(torch.pi)) + (x-benign_mu).T @ (x-benign_mu))
+    prob_2 =-0.5 * (3*dataset_loader.image_size*dataset_loader.image_size*torch.log(2 * torch.tensor(torch.pi)) + (x-rev_mu).T @ (x-rev_mu))
     if prob_2>prob_1:
         TNR = TNR+1
         all_negative = all_negative + 1
     else:
         all_positive = all_positive + 1
+
+
+
 
 
 print(TPR/all_negative*100, "percent of benign samples are detected!")
