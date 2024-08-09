@@ -98,7 +98,7 @@ For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cif
 An example (Glasses trigger + Cat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_celeba/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl"
+CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl"
 ```
 For the commands of other settings, you can refer to [`celeba_hq_model.sh`](./celeba_hq_model.sh) for more details.
 
