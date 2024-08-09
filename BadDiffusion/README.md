@@ -57,7 +57,7 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 An example (Box trigger + Hat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT --fclip o -o --gpu 0
+CUDA_VISIBLE_DEVICES=0 python reverse.py --batch-size 16 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory/" --project CIFAR_BOX_14_hat --mode measure --ckpt BOX_HAT --fclip o -o --gpu 0
 ```
 
 For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
@@ -89,7 +89,7 @@ Stop Sign
 An example (Box trigger + Hat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"
+CUDA_VISIBLE_DEVICES=0 python model_detection.py --path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"
 ```
 For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cifar_10_model.sh) for more details.
 
@@ -98,7 +98,7 @@ For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cif
 An example (Glasses trigger + Cat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python model_detection.py --path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl"
+CUDA_VISIBLE_DEVICES=0 python model_detection.py --path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl"
 ```
 For the commands of other settings, you can refer to [`celeba_hq_model.sh`](./celeba_hq_model.sh) for more details.
 
@@ -109,11 +109,23 @@ For the commands of other settings, you can refer to [`celeba_hq_model.sh`](./ce
 An example (Box trigger + Hat target):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python input_detection.py --reverse_path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"  --trigger CIFAR_BOX_14_hat --ckpt BOX_HAT --fclip o -o --gpu 0
+CUDA_VISIBLE_DEVICES=0 python input_detection.py --reverse_path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"  --trigger CIFAR_BOX_14_hat --ckpt BOX_HAT --fclip o -o --gpu 0
 ```
 For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cifar_10_input.sh) for more details.
 
+**CELEBA-HQ dataset:**
+
+An example (Glasses trigger + Cat target):
+
+```
+ CUDA_VISIBLE_DEVICES=0 python input_detection.py --reverse_path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl" --project CELEBA_GLASSES_CAT_5 --ckpt GLASSES_CAT --fclip o -o --gpu 10
+```
+
+For the commands of other settings, you can refer to [`celeba_hq_input.sh`](./celeba_hq_input.sh) for more details.
+
 **Result:**
+
+CIFAR-10
 
 |Setting|TPR|TNR|
 |--|--|--|
@@ -124,5 +136,9 @@ For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cif
 |STOP-SHOE|100%|100%|
 |STOP-CORNER|100%|100%|
 
+CELEBA-HQ
 
+|Setting|TPR|TNR|
+|--|--|--|
+|GLASSES-CAT|100%|100%|
 
