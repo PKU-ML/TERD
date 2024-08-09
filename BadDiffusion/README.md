@@ -67,7 +67,7 @@ For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./ci
 An example (Glasses trigger + Cat target):
 
 ```
-CUDA_VISIBLE_DEVICES=0 python reverse_big.py --batch-size 2 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory_celebahq/" --project CELEBA_GLASSES_CAT_5 --mode measure --ckpt res_DDPM-CELEBA-HQ-256_CELEBA-HQ_ep50_c1.0_p0.5_GLASSES-CAT --fclip o -o --gpu 0 --dataset CELEBA-HQ
+CUDA_VISIBLE_DEVICES=0 python reverse_big.py --batch-size 2 --iteration 3000 --num_steps 10 --lr 0.5 --out-dir "./reverse_directory_celebahq/" --project CELEBA_GLASSES_CAT_5 --mode measure --ckpt GLASSES_CAT --fclip o -o --gpu 0 --dataset CELEBA-HQ
 ```
 
 For the commands of other settings, please refer to [`celeba_hq_reverse.sh`](./celeba_hq_reverse.sh) for more details.
