@@ -1,1 +1,1 @@
-# TERD against TrojDiff
+# TERD against the TrojDiff
