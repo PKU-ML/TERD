@@ -18,17 +18,11 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 - [Benign Model]()
 
-- [In-D2D+ patch-based]()
+- [In-D2D]()
 
-- [In-D2D+ blend-based]()
+- [Out-D2D]()
 
-- [Out-D2D+ patch-based]()
-
-- [Out-D2D+ blend-based]()
-
-- [D2I+ patch-based]()
-
-- [D2I+ blend-based]()
+- [D2I]()
 
 **Celeba dataset**
 
@@ -45,14 +39,8 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 - [Benign Model]()
 
-- [In-D2D+ patch-based]()
+- [In-D2D]()
 
-- [In-D2D+ blend-based]()
+- [Out-D2D]()
 
-- [Out-D2D+ patch-based]()
-
-- [Out-D2D+ blend-based]()
-
-- [D2I+ patch-based]()
-
-- [D2I+ blend-based]()
+- [D2I]()
