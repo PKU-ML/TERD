@@ -32,7 +32,8 @@ An example of the backdoor training Script (Require 1\*A100 80G or 3\*RTX3090):
 
 # Trigger: Hello kitty
 
-CUDA_VISIBLE_DEVICES=0,1 python baddiffusion.py --project CELEBA_GLASSES_CAT_5 --mode train+measure --dataset CELEBA-HQ --batch 64 --epoch 50 --poison_rate 0.5 --trigger GLASSES --learning_rate 8e-5 --target CAT --ckpt DDPM-CELEBA-HQ-256 --fclip o -o --gpu "0,1"
+python main_attack.py --dataset celeba --config celeba.yml --doc celeba --target_label 7 --ni --resume_training --gamma 0.6
+
 ```
 
 You can also download pre-trained checkpoints of the benign/backdoor models with the following [links]():
