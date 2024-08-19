@@ -26,7 +26,7 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 **Celeba dataset**
 
-An example of the backdoor training Script (Require 1*A100 80G or 3*RTX3090):
+An example of the backdoor training Script (Require 1\*A100 80G or 3\*RTX3090):
 ```
 # Setting: In-D2D
 
