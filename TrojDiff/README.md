@@ -14,21 +14,21 @@ An example of the backdoor training Script:
 python main_attack.py --dataset cifar10 --config cifar10.yml --target_label 7 --ni --resume_training --gamma 0.6
 ```
 
-You can also download pre-trained checkpoints of the benign/backdoor models with the following [links](https://drive.google.com/drive/folders/1VtAaGI2RjsSIqagIBjb96Y5cQ1MkeQ8B?usp=drive_link):
+You can also download pre-trained checkpoints of the benign/backdoor models with the following [links]():
 
-- [Benign Model](https://drive.google.com/drive/folders/1MxTWQXM92_FDrgd_JRteTrdeLagnBbMH?usp=sharing)
+- [Benign Model]()
 
-- [BOX Trigger + HAT Target Model](https://drive.google.com/drive/folders/1bfie99--iSRYP4zNajommQgbWwkBbIWk?usp=drive_link)
+- [In-D2D+ patch-based]()
 
-- [BOX Trigger + CORNER Target Model](https://drive.google.com/drive/folders/1QJ8q4dD2A6VH0cnSWuCCWGZxuLsZtEqB?usp=drive_link)
+- [In-D2D+ blend-based]()
 
-- [BOX Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1cLbzBz9IY_XBnLhGfTeatPC6SfnhLYtS?usp=drive_link)
+- [Out-D2D+ patch-based]()
 
-- [STOP SIGN Trigger + HAT Target Model](https://drive.google.com/drive/folders/17MSBVh2uXCo6Dq6HQaY2HeA4VFkmh7fT?usp=drive_link)
+- [Out-D2D+ blend-based]()
 
-- [STOP SIGN Trigger + CORNER Target Model](https://drive.google.com/drive/folders/1IAV7qrH6UVLdPz8-piVGPM6gDCqbH8NG?usp=drive_link)
+- [D2I+ patch-based]()
 
-- [STOP SIGN Trigger + SHOE Target Model](https://drive.google.com/drive/folders/1iu7G07MASRyzjpBc65VXuiCBE6H66yah?usp=drive_link)
+- [D2I+ blend-based]()
 
 **CELEBA dataset**
 
