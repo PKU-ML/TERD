@@ -12,7 +12,7 @@ from models.diffusion import Model
 from datasets import data_transform
 import torchvision.transforms as T
 from PIL import Image
-
+import torchvision
 
 
 
