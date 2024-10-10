@@ -105,7 +105,7 @@ def parse_args_and_config():
 
     parser.add_argument('--weight_decay', type=float, default=5e-5, help="lambda")
     parser.add_argument('--lr', type=float, default=0.5, help="Learning rate for optimization mu")
-    parser.add_argument('--lr2', type=float, default=0.002, help="Learning rate for optimization gamma")
+    parser.add_argument('--lr2', type=float, default=0.001, help="Learning rate for optimization gamma")
     parser.add_argument("--timesteps", type=int, default=10, help="DDIM steps")
     parser.add_argument('--checkpoint', type=str, required=True)
     parser.add_argument("--out-dir", type=str,default="./log", help="Path to save the reversed trigger.")
