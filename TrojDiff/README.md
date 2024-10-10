@@ -1,4 +1,4 @@
-# TERD against the TrojDiff
+<img width="799" alt="image" src="https://github.com/user-attachments/assets/2f78d561-b238-4c99-bd73-bfbc30383a91"># TERD against the TrojDiff
 ## Backdoor Training
 
 Download the official code of [TrojDiff](https://github.com/chenweixin107/TrojDiff) and place it in this repository. You can train a backdoor model following their instructions.
@@ -14,15 +14,15 @@ An example of the backdoor training Script:
 python main_attack.py --dataset cifar10 --config cifar10.yml --target_label 7 --ni --resume_training --gamma 0.6
 ```
 
-You can also download pre-trained checkpoints of the benign/backdoor models with the following [links]():
+You can also download pre-trained checkpoints of the benign/backdoor models with the following [links](https://drive.google.com/drive/folders/1ONiwDKtYDxKkD9VQnwUzgdaMn5Z95nf0?usp=drive_link):
 
-- [Benign Model]()
+- [Benign Model](https://drive.google.com/file/d/1KsqrrL7gxvxLl1OF5WhpuEcd5sleod57/view?usp=sharing)
 
-- [In-D2D]()
+- [In-D2D](https://drive.google.com/file/d/1BzJ7lV-H9ygCcqIpWjb4Q5BUyUmnHZJ-/view?usp=drive_link)
 
-- [Out-D2D]()
+- [Out-D2D](https://drive.google.com/file/d/1nu77UPO2tqItn4CZyyhs8WUf_o625a6D/view?usp=sharing)
 
-- [D2I]()
+- [D2I](https://drive.google.com/file/d/1icpC5EQnvabALIvbMCUEKDgw_k5kpaZG/view?usp=sharing)
 
 **Celeba dataset**
 
