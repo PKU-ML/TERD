@@ -1,4 +1,4 @@
-<img width="799" alt="image" src="https://github.com/user-attachments/assets/2f78d561-b238-4c99-bd73-bfbc30383a91"># TERD against the TrojDiff
+# TERD against the TrojDiff
 ## Backdoor Training
 
 Download the official code of [TrojDiff](https://github.com/chenweixin107/TrojDiff) and place it in this repository. You can train a backdoor model following their instructions.
