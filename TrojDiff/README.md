@@ -24,7 +24,7 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 
 - [D2I](https://drive.google.com/file/d/1icpC5EQnvabALIvbMCUEKDgw_k5kpaZG/view?usp=sharing)
 
-**Celeba dataset**
+**CelebA dataset**
 
 An example of the backdoor training Script (Require 1\*A100 80G or 3\*RTX3090):
 ```
@@ -59,3 +59,5 @@ CUDA_VISIBLE_DEVICES=1 python reverse.py --checkpoint "./troj_CIFAR10/d2din/ckpt
 ```
 
 For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
+
+**CelebA dataset:**
