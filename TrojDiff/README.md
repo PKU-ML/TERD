@@ -69,3 +69,24 @@ CUDA_VISIBLE_DEVICES=0 python reverse_big.py --checkpoint "./troj_CELEBA/benign/
 ```
 
 For the commands of other settings, please refer to [`celeba_reverse.sh`](./celeba_reverse.sh) for more details.
+
+
+## Model Detection
+
+**CIFAR-10 dataset:**
+
+An example (In-D2D):
+
+```
+CUDA_VISIBLE_DEVICES=0 python model_detection.py --path "./CIFAR10_reverse/d2d_in/log_5e-05_10_16_0.5_0.001_3000/reverse.pkl"
+```
+For the commands of other settings, you can refer to [`cifar_10_model.sh`](./cifar_10_model.sh) for more details.
+
+**CELEBA-HQ dataset:**
+
+An example (In-D2D):
+
+```
+CUDA_VISIBLE_DEVICES=0 python model_detection.py --path "./CELEBA_reverse/d2d_in/log_0.0005_10_16_0.5_0.001_3000/reverse.pkl"
+```
+For the commands of other settings, you can refer to [`celeba_model.sh`](./celeba_model.sh) for more details.
