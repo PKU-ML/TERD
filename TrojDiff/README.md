@@ -55,7 +55,7 @@ You can also download pre-trained checkpoints of the benign/backdoor models with
 An example (In-D2D):
 
 ```
-CUDA_VISIBLE_DEVICES=1 python reverse.py --checkpoint "./troj_CIFAR10/d2din/ckpt.pth" --out-dir "./CIFAR10_reverse/d2d_in/" --lr 0.5 --lr2 0.001 --weight_decay 5e-5 --dataset cifar10 --config cifar10.yml --target_label 7 --ni --fid  --eta 0 --gamma 0.6 --skip_type 'quad'
+CUDA_VISIBLE_DEVICES=0 python reverse.py --checkpoint "./troj_CIFAR10/d2din/ckpt.pth" --out-dir "./CIFAR10_reverse/d2d_in/" --lr 0.5 --lr2 0.001 --weight_decay 5e-5 --dataset cifar10 --config cifar10.yml --target_label 7 --ni --fid  --eta 0 --gamma 0.6 --skip_type 'quad'
 ```
 
 For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
