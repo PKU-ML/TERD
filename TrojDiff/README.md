@@ -16,13 +16,13 @@ python main_attack.py --dataset cifar10 --config cifar10.yml --target_label 7 --
 
 You can also download pre-trained checkpoints of the benign/backdoor models with the following [links](https://drive.google.com/drive/folders/1ONiwDKtYDxKkD9VQnwUzgdaMn5Z95nf0?usp=drive_link):
 
-- [Benign Model](https://drive.google.com/file/d/1KsqrrL7gxvxLl1OF5WhpuEcd5sleod57/view?usp=sharing)
+- [Benign Model](https://drive.google.com/file/d/1KsqrrL7gxvxLl1OF5WhpuEcd5sleod57/view?usp=drive_link)
 
 - [In-D2D](https://drive.google.com/file/d/1BzJ7lV-H9ygCcqIpWjb4Q5BUyUmnHZJ-/view?usp=drive_link)
 
-- [Out-D2D](https://drive.google.com/file/d/1nu77UPO2tqItn4CZyyhs8WUf_o625a6D/view?usp=sharing)
+- [Out-D2D](https://drive.google.com/file/d/1nu77UPO2tqItn4CZyyhs8WUf_o625a6D/view?usp=drive_link)
 
-- [D2I](https://drive.google.com/file/d/1icpC5EQnvabALIvbMCUEKDgw_k5kpaZG/view?usp=sharing)
+- [D2I](https://drive.google.com/file/d/1icpC5EQnvabALIvbMCUEKDgw_k5kpaZG/view?usp=drive_link)
 
 **CelebA dataset**
 
