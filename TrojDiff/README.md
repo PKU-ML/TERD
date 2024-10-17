@@ -98,8 +98,9 @@ For the commands of other settings, you can refer to [`celeba_model.sh`](./celeb
 An example (In-D2D):
 
 ```
-CUDA_VISIBLE_DEVICES=0 python input_detection.py --reverse_path "./reverse_directory/CIFAR_BOX_14_hat/log_5e-05_10_3000_16_0.5/reverse.pkl"  --trigger CIFAR_BOX_14_hat --ckpt BOX_HAT --fclip o -o --gpu 0
+CUDA_VISIBLE_DEVICES=0 python input_detection.py --path "./CIFAR10_reverse/d2d_in/log_5e-05_10_16_0.5_0.001_3000/reverse.pkl"
 ```
+
 For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cifar_10_input.sh) for more details.
 
 **CELEBA dataset:**
@@ -107,7 +108,7 @@ For the commands of other settings, you can refer to [`cifar_10_input.sh`](./cif
 An example (In-D2D):
 
 ```
- CUDA_VISIBLE_DEVICES=0 python input_detection.py --reverse_path "./reverse_directory_celebahq/CELEBA_GLASSES_CAT_5/log_0.0005_10_3000_2_0.5/reverse.pkl" --project CELEBA_GLASSES_CAT_5 --ckpt GLASSES_CAT --fclip o -o --gpu 10
+CUDA_VISIBLE_DEVICES=0 python input_detection.py --image_size 64 --path "./CELEBA_reverse/d2d_in/log_0.0005_10_16_0.5_0.001_3000/reverse.pkl"
 ```
 
 For the commands of other settings, you can refer to [`celeba_input.sh`](./celeba_input.sh) for more details.
@@ -118,16 +119,15 @@ CIFAR-10
 
 |Setting|TPR|TNR|
 |--|--|--|
-|BOX-HAT|100%|100%|
-|BOX-SHOE|100%|100%|
-|BOX-CORNER|100%|100%|
-|STOP-HAT|100%|100%|
-|STOP-SHOE|100%|100%|
-|STOP-CORNER|100%|100%|
+|In-D2D|100%|100%|
+|Out-D2D|100%|100%|
+|D2I|100%|100%|
 
 CELEBA
 
 |Setting|TPR|TNR|
 |--|--|--|
-|GLASSES-CAT|100%|100%|
+|In-D2D|100%|100%|
+|Out-D2D|100%|100%|
+|D2I|100%|100%|
 
