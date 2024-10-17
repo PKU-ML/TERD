@@ -358,11 +358,6 @@ class Diffusion(object):
         os.makedirs(self.args.out_dir, exist_ok=True)
 
 
-        # Delete
-        image_dir = os.path.join(self.args.out_dir, "reverse_image")
-        os.makedirs(image_dir, exist_ok=True)
-
-
         for _ in tqdm.tqdm(
                 range(iterations), desc="Trigger Estimation."
         ):
