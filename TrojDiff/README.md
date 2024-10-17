@@ -38,13 +38,13 @@ python main_attack.py --dataset celeba --config celeba.yml --doc celeba --target
 
 You can also download pre-trained checkpoints of the benign/backdoor models with the following [links]():
 
-- [Benign Model]()
+- [Benign Model](https://drive.google.com/file/d/103psIUPG3ukut-42fwOZqs26dh17PPeo/view?usp=drive_link)
 
-- [In-D2D]()
+- [In-D2D](https://drive.google.com/file/d/1KAB4kDCAwNE2041Zod379mt2dU0kFBzp/view?usp=drive_link)
 
-- [Out-D2D]()
+- [Out-D2D](https://drive.google.com/file/d/1LGqblZ07PIoDMHUny_COE0TEbZA9My1r/view?usp=drive_link)
 
-- [D2I]()
+- [D2I](https://drive.google.com/file/d/1F9vg-D5ltTkXXELS7uIJw8DU1yPhxmu1/view?usp=drive_link)
 
 
 
