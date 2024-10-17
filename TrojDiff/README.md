@@ -61,3 +61,11 @@ CUDA_VISIBLE_DEVICES=1 python reverse.py --checkpoint "./troj_CIFAR10/d2din/ckpt
 For the commands of other settings, please refer to [`cifar_10_reverse.sh`](./cifar_10_reverse.sh) for more details.
 
 **CelebA dataset:**
+
+An example (In-D2D):
+
+```
+CUDA_VISIBLE_DEVICES=0 python reverse_big.py --checkpoint "./troj_CELEBA/benign/ckpt.pth" --out-dir "./CELEBA_reverse/benign/" --lr 0.5 --lr2 0.001 --weight_decay 5e-4 --dataset celeba --config celeba.yml --target_label 7 --ni --fid  --eta 0 --gamma 0.6 --skip_type 'quad'
+```
+
+For the commands of other settings, please refer to [`celeba_reverse.sh`](./celeba_reverse.sh) for more details.
